@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Time</title>
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+.navbar-inverse{
+	background:#660;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{
+	background-color:#B8CF72;
+	color:#364F35;
+}
+
+.carousel-caption{
+	background-color:#000;
+	opacity:0.7;
+	color:#fff;
+	padding:10px;
+	font-family:"微軟正黑體";
+	
+}
+
+.jumbotron{
+	padding:0;
+	margin:0;
+}
+
+#content{
+	padding-bottom:5%;}
+
+footer{
+	background-color:#660;
+	bottom:0px;
+	width:100%;
+	position:fixed;
+	color:#CCC;
+	
+}
+</style>
+<body>
+<!--導覽區-->
+<nav class="navbar-inverse">
+	<div class="container-fluid">
+    	<div class="bavbar-header" id="navheader">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Cafe Time</a>
+        </div>
+		<div id="mynav"  class="collapse navbar-collapse">
+        	<ul class="nav navbar-nav">
+            	<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;首頁</a></li>
+            	<li><a href="aboutme.html"><span class="glyphicon glyphicon-star"></span>&nbsp;關於我們</a></li>
+            	<!--dropdown下拉選單-->
+                <li class="active"><a href="products.html" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-info-sign "></span>&nbsp;產品資訊 
+       			<span class="caret"></span> </a>
+                     <ul class="dropdown-menu">
+                     	<li><a href="#book1">咖啡的品種</a>
+                        <li><a href="#book2">阿拉比卡咖啡</a></li>
+                        <li><a href="#book3">羅布斯塔咖啡</a></li>
+                        <li><a href="#book4">利比亞咖啡</a></li>
+                     </ul>
+                </li>
+                <!--end-->
+            	<li><a href="customer.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;客戶服務</a></li>
+                <li><a href="mailto:@gmail.com"><span class="glyphicon glyphicon-envelope"></span>&nbsp;與我聯絡</a></li>
+            </ul>
+            <ul class="nav navbar-nav form-group form-horizontal" style="padding-top:10px">
+            	<li>
+                	<form method="get" action="https://www.google.com.tw/search">
+					<input type="text" name="q"  maxlength="2048" placeholder="請輸入要搜尋的內容" style="border-radius:5px;" >
+    				<input type="submit" name="btnG" value="搜尋" style="border-radius:5px;">
+                    </form>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right"><!-- >768px才顯示在右邊-->
+            	<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>
+              登入</a></li>
+            </ul>
+            
+        
+        </div>
+    </div>
+</nav>
+<!--標題區-->
+<div class="jumbotron">
+	<div id="demo" class="carousel slide" data-ride="carousel">
+    	<ol class="carousel-indicators">
+        	<li data-slide-to="0" data-target="demo" class="active"></li>
+            <li data-slide-to="1" data-target="demo" ></li>
+            <li data-slide-to="2" data-target="demo" ></li>
+        </ol>
+        <div class="carousel-inner">
+        	<div class="item active">
+        		<img src="images/coffee/coffee2/coffee01.jpg" style="width:100%">
+              	<div class="carousel-caption">
+                <h1>阿拉比卡咖啡</h1>
+                <h2>Arabica coffee</h2>
+                <p>原產於東非伊索比亞南部的阿比西 尼亞高原，現今沿海尚有野生種。</p>
+                </div>
+        	</div>
+            <div class="item">
+        		<img src="images/coffee/coffee2/coffee02.jpg" style="width:100%">
+                <div class="carousel-caption">
+                <h1>羅布斯塔咖啡</h1>
+                <h2>Robusta coffee</h2>
+                <p>羅布斯塔咖啡屬於剛果咖啡的突變 種，原產於西非剛果，本種有缺乏香氣之 憾，苦味較強，酸味不足。</p>
+                </div>
+        	</div>
+			<div class="item">
+        		<img src="images/coffee/coffee2/coffee03.jpg" style="width:100%">
+                <div class="carousel-caption">
+                <h1>利比亞咖啡</h1>
+                <h2>Liberia coffee</h2>
+                <p>原產於西非利比亞，本種香味不佳， 苦味較強。除少數生產國自己消費外，只 有歐洲人飲用利比亞咖啡。</p>
+                </div>
+        	</div>               
+        </div>
+        <a href="#demo" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a href="#demo" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>    
+    </div>
+</div>
+<!--內容區-->
+<div class="container-fluid" id="content">
+<h2 id="book1">咖啡的品種</h2> 
+<p>咖啡分為三原種系統，阿拉比卡咖 啡又稱阿拉伯咖啡、羅布斯塔咖啡又稱剛 果咖啡、利比亞咖啡又稱賴比瑞亞咖啡， 全世界現今咖啡約有一百多種，普通栽培 種多屬三原種系統及若干雜交種，三原 種可細分為數十種品種，咖啡豆因此依品 種、產地、品牌的不同會有各自不同的特 性，阿拉比卡咖啡，佔世界總產量76﹪、 羅布斯塔咖啡，佔世界總產量約20﹪、利 比亞咖啡，除少數生產國自己消費外，只 有歐洲有人飲用。台灣咖啡最早引進即為 阿拉比卡咖啡，目前大面積栽培的也是阿 拉比卡咖啡。<a href="#navheader">top</a></p>
+<h2 id="book2">阿拉比卡咖啡</h2>
+<p>原產於東非伊索比亞南部的阿比西 尼亞高原，現今沿海尚有野生種。阿拉比 卡種咖啡在各系統中風味最佳，香味良 好，味道均衡，品質最優，市價最高。分 佈在非洲、印尼及中南美洲等地區。台灣 咖啡最早引進即為阿拉比卡咖啡，目前種 最多的也是阿拉比卡咖啡。巴西目前栽 培的品種有Typical、Bourbon、Mound Novo、Caturra等。 此品種屬常綠灌木，樹高可達3?7 公尺，樹皮灰黃褐色具淺縱裂。葉片呈單 葉對生，葉片長橢圓形或卵狀橢圓形，葉 尖尖銳，葉緣全緣帶微波，葉長10?20 公分，葉幅4?8公分。花朵10?20朵簇生於側枝葉腋，花小直徑約3公分，花冠 白色，開花時會散發一種特有的愉快芳香氣味。果實為橢圓形核果，未熟果 呈深綠色，成熟時果實表面呈暗紅色或黃 紅色，長1.2?1.5公分，每果重1.0?2.5 公克，果實由外皮、果肉、內果皮、種子 (咖啡豆)所形成，果肉薄為黃白色，富水 分，微帶甜味，內含兩粒種子，具有一層 淺黃色種殼，乾燥後易分離。<a href="#navheader">top</a></p>
+<h2 id="book3">羅布斯塔咖啡 </h2>
+<p>羅布斯塔咖啡屬於剛果咖啡的突變 種，原產於西非剛果，本種有缺乏香氣之 憾，苦味較強，酸味不足。 此品種植株較大，樹高可達5?8公 尺，樹冠傘狀，分枝較長而下垂，生育強 健，樹姿略似阿拉比卡咖啡。葉片呈單葉 對生，葉較阿拉比卡咖啡大，葉全緣，有 淺波狀凹凸，是一大特徵。花簇生於葉 腋，一枝上常著花百十許，花香濃烈。果實為圓或扁圓形核果，未熟果呈 深綠色，成熟時果實表面呈暗紅色，較利 比亞咖啡小。<a href="#navheader">top</a></p>
+<h2 id="book4">利比亞咖啡</h2>
+<p>原產於西非利比亞，本種香味不佳， 苦味較強。除少數生產國自己消費外，只 有歐洲人飲用利比亞咖啡。 此品種植株為常綠灌木，放任栽培時 樹高可達10?15公尺，樹性強健，枝葉 茂盛，枝條直立，表面帶淺赭色，後漸變 灰褐色，嫩枝綠色，均光滑。葉片大，葉 長16?35公分，葉幅6?18公分，葉全緣 呈長橢圓形。花為咖啡屬中最大的花，常 密集簇生於葉腋間，開花時香氣濃熟，同 一結果枝上常見純白、淡紅色花朵，花呈 純白或帶桃紅色至深紅色(圖六)。本種果 實較阿拉比卡咖啡大，果型呈橢圓或近球 形，果皮暗紅色，果肉汁少，甜味帶苦， 內有種子2?3粒，種子橢圓形或卵形。<a href="#navheader">top</a></p>
+</div>
+<footer class="container-fluid text-center">版權所有 翻版必究</footer>
+</body>
+</html>

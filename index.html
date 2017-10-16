@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Time</title>
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+.navbar-inverse{
+	background:#660;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{
+	background-color:#B8CF72;
+	color:#364F35;
+
+}
+.jumbotron{
+	background-image:url(images/coffee/coffee/01.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	color:#FFC;
+	font-family:"微軟正黑體";
+}
+footer{
+	background-color:#660;
+	bottom:0px;
+	width:100%;
+	position:fixed;
+	color:#CCC;
+	
+}
+</style>
+<body>
+<!--導覽區-->
+<nav class="navbar-inverse">
+	<div class="container-fluid">
+    	<div class="bavbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Cafe Time</a>
+        </div>
+		<div id="mynav"  class="collapse navbar-collapse">
+        	<ul class="nav navbar-nav">
+            	<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;首頁</a></li>
+            	<li><a href="aboutme.html"><span class="glyphicon glyphicon-star"></span>&nbsp;關於我們</a></li>
+            	<li><a href="products.html"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;產品資訊</a></li>
+            	<li><a href="customer.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;客戶服務</a></li>
+                <li><a href="mailto:@gmail.com"><span class="glyphicon glyphicon-envelope"></span>&nbsp;與我聯絡</a></li>
+            </ul>
+            <ul class="nav navbar-nav form-group form-horizontal" style="padding-top:10px">
+            	<li>
+                	<form method="get" action="https://www.google.com.tw/search">
+					<input type="text" name="q"  maxlength="2048" placeholder="請輸入要搜尋的內容" style="border-radius:5px;" >
+    				<input type="submit" name="btnG" value="搜尋" style="border-radius:5px;">
+                    </form>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right"><!-- >768px才顯示在右邊-->
+            	<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>
+              登入</a></li>
+            </ul>
+            
+        
+        </div>
+    </div>
+</nav>
+<!--標題區-->
+<div class="jumbotron">
+	<div class="container">
+    	<h1>咖啡的歷史起源</h1>
+        	<p>咖啡的來源已無從稽考。諸多傳說之一指咖啡原產於衣索比亞（Ethiopia）西南部的咖法省高原地區，據說是一位牧羊人發現羊吃了一種植物後，變得非常興奮活潑，因此發現了咖啡。</p>
+    </div>
+</div>
+<!--內容區-->
+<div class="container-fluid">
+	<h3>Coffee Picture</h3>
+	<div class="row">
+    	<div class="col-sm-3">
+        	<img src="images/coffee/coffee2/coffee01.jpg" class="img-responsive img-rounded";>
+        </div>
+        <div class="col-sm-3">
+        	<img src="images/coffee/coffee2/coffee02.jpg" class="img-responsive img-rounded";>
+        </div>
+        <div class="col-sm-3">
+        	<img src="images/coffee/coffee2/coffee03.jpg" class="img-responsive img-rounded";>
+        </div>
+        <div class="col-sm-3">
+        	<img src="images/coffee/coffee2/coffee04.jpg" class="img-responsive img-rounded";>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container-fluid">
+	<div class="row">
+    	<div class="col-sm-3">
+        	<img src="images/coffee/coffee2/coffee05.jpg" class="img-responsive img-rounded";>
+        </div>
+        <div class="col-sm-3">
+        	<img src="images/coffee/coffee2/coffee06.jpg" class="img-responsive img-rounded";>
+        </div>
+        <div class="col-sm-3">
+        	<img src="images/coffee/coffee2/coffee07.jpg" class="img-responsive img-rounded";>
+        </div>
+        <div class="col-sm-3">
+        	<img src="images/coffee/coffee2/coffee08.jpg" class="img-responsive img-rounded";>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid text-center">版權所有 翻版必究</footer>
+</body>
+</html>
